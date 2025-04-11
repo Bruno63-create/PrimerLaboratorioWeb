@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <h1>Formulario para contactarme</h1>
+    </header>
+    <main>
+        <h2>Formulario</h2>
+
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Datos Personales</legend>
+                
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required>
+                
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="ejemplo@dominio.com" required>
+                
+            </fieldset>
+            <fieldset>
+                <label for="tema_mensaje">Tema del mensaje:</label>
+                <select id="tema_mensaje" name="tema_mensaje">
+                    <option value="">Seleccione un tema para el mensaje</option>
+                    <option value="consulta">Consulta General</option>
+                    <option value="soporte_tecnico">Soporte Técnico</option>
+                    <option value="sugerencia">Sugerencia</option>
+                    <option value="reclamo">Reclamo</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
+            </fieldset>
+
+            <button type="submit">Enviar</button>
+
+        </form>
+    </main>
+</body>
+</html>
